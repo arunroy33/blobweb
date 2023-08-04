@@ -4,6 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./assets/img/favicon/site.webmanifest">
+
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" />
@@ -11,7 +17,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/responsive.css">
-    <title>BLOB</title>
+    <title>Cafe</title>
 </head>
 
 <body>
@@ -81,9 +87,26 @@
     </div>
 
     <div class="text-center play-btn">
-        <a href="#"> <i class="far fa-play-circle"></i></a>
+        <a href="#" data-bs-toggle="modal" data-bs-target="#videomodal"> <i class="far fa-play-circle"></i></a>
     </div>
 
+    <!-- Modal -->
+    <div class="modal fade" id="videomodal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content" style="background-color: transparent; border: none;">
+
+                <div class="modal-body">
+                    <iframe width="100%" height="415"
+                        src="https://www.youtube.com/embed/1ozmyl1ZEyY?si=gMFG6cy1OmpO5T7j" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                    <!-- <video src="https://youtu.be/1ozmyl1ZEyY?si=PvmNYcN8QgKFp2FN" width="100%" height="415"></video> -->
+                </div>
+
+            </div>
+        </div>
+    </div>
     <!-- Gallery section starts here  -->
     <section class="py-5">
 
@@ -149,23 +172,27 @@
     <!-- Coffee  section start here  -->
     <section>
         <div class="container py-5">
-            <div class="row chokletbg cafe-box">
+            <div class="row yellow-bg cafe-box">
                 <div class="col-md-4 col-sm-12">
                     <div class="studiobox-content">
                         <div>
-                            <p>Checkout</p>
-                            <h2><b>Cafe Blob </b></h2>
+                            <p>Explore</p>
+                            <h2><b>Studio </b></h2>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-8 col-sm-12">
                     <div class="studiobox">
-                        <img class="img-fluid" src="./assets/img/cafe-page/cofe-cap.png" alt="">
+                        <a href="studio.html">
+                            <img class="img-fluid" src="./assets/img/studio-page/studiobox.png" alt="">
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
+
 
     <!-- FAQ  section start here  -->
     <section>
@@ -240,11 +267,12 @@
     <!-- Footer section start here  -->
     <footer class="">
         <div class="container py-5">
+
             <div class="row">
                 <div class="col-md-2 col-sm-12">
-                    <div class="">
-                        <img class="img-fluid d-block" src="./assets/img/lgo.png" alt="">
-                        <div class="social-icons">
+                    <div class="mobile-center mb-5">
+                        <img class="img-fluid" src="./assets/img/lgo.png" alt="">
+                        <div class="social-icons mobile-none">
                             <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
                             <a href="#"><i class="fa-brands fa-instagram"></i></a>
                             <a href="#"> <i class="fa-brands fa-linkedin"></i></a>
@@ -253,7 +281,7 @@
 
                 </div>
 
-                <div class="col-md-2 col-sm-6">
+                <div class="col-md-2 col-sm-12 mobile-none">
                     <h3 class="text-info">Ouick Links</h3>
                     <ul>
                         <li><a href="#">Career </a> </li>
@@ -261,7 +289,7 @@
                         <li><a href="#"> T&C</a> </li>
                     </ul>
                 </div>
-                <div class="col-md-2 col-sm-6">
+                <div class="col-md-2 col-sm-6 mw-50 pl-mobile">
                     <h3 class="text-info">Offering</h3>
                     <ul>
                         <li><a href="#">Co-working </a> </li>
@@ -270,7 +298,7 @@
                         <li><a href="#"> Turf</a> </li>
                     </ul>
                 </div>
-                <div class="col-md-2 col-sm-6">
+                <div class="col-md-2 col-sm-6 mw-50">
                     <h3 class="text-info">Partnership</h3>
                     <ul>
                         <li><a href="#">Career </a> </li>
@@ -279,25 +307,39 @@
                     </ul>
                 </div>
                 <div class="col-md-4 col-sm-12">
-                    <div class="scribe-box">
-                        <h3 class="text-info">Join the <span class="red-">Newslatter</span></h3>
-                        <form class="" action="" method="post">
-                            <input class="form-control" type="email" name="" id="" required>
-                            <button type="submit">Subscribe</button>
-                        </form>
-                    </div>
-                    <h3 class="text-info mt-2">Feel free contact with us</h3>
-                    <small><i class="fa-solid fa-phone purplr-text"></i> 033-68110807 &nbsp; <i
-                            class="fa-solid fa-envelope red-text"></i>
-                        sales@beatblob.com | beatblood@gmail.com</small>
-                    <br>
-                    <small>7th floor, Yamuna Building, 86, Golaghata Road, Kolkata- 700048</small>
 
-                    <!-- <ul>
-                <li><a href="#">033-68110807 </a> </li>
-                <li><a href="#">sales@beatblob.com </a> </li>
-                <li><a href="#"> beatblood@gmail.com</a> </li>
-            </ul> -->
+                    <div class="mobile-center">
+                        <div class="scribe-box mb-4">
+                            <h3 class="text-info">Join the <span class="red-">Newslatter</span></h3>
+                            <form class="" action="" method="post">
+                                <input class="form-control" type="email" name="" id="" placeholder="Enter your email"
+                                    required>
+                                <button type="submit">Subscribe</button>
+                            </form>
+                        </div>
+                        <div class="mt-mobile">
+                            <h3 class="text-info">Feel free contact with us</h3>
+                            <small><i class="fa-solid fa-phone purplr-text"></i> 033-68110807 &nbsp; <i
+                                    class="fa-solid fa-envelope red-text"></i>
+                                sales@beatblob.com | beatblood@gmail.com</small>
+                        </div>
+
+                        <div class="mt-mobile">
+                            <small>7th floor, Yamuna Building, 86, Golaghata Road, Kolkata- 700048</small>
+                        </div>
+                        <small class=" desktop-none mt-mobile">
+                            <a href="#">Career </a>
+                            <a href="#"> Privacy Polices</a>
+                            <a href="#"> T&C</a>
+                        </small>
+
+                        <small class="mt-mobile desktop-none">
+                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#"> <i class="fa-brands fa-linkedin"></i></a>
+                        </small>
+                    </div>
+
                 </div>
 
             </div>
