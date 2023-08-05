@@ -242,6 +242,10 @@ header {
     position: relative;
 }
 
+.dropdown:hover>.dropdown-menu {
+    display: block;
+}
+
 /* Banner secton style start here  */
 .banner-sec {
     margin-top: -110px;
@@ -706,7 +710,7 @@ footer li a {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    /* gap: 20px; */
     border-radius: 10px;
     padding: 20px;
     min-height: 239px;
@@ -740,6 +744,11 @@ footer li a {
 
 }
 
+.accordion-item:last-of-type .accordion-button.collapsed {
+    border-bottom-right-radius: 20px !important;
+    border-bottom-left-radius: 20px !important;
+}
+
 .accordion-item {
     margin-bottom: 15px;
     border: none;
@@ -765,10 +774,6 @@ footer li a {
     padding: 20px;
 }
 
-.accordion-item:last-of-type .accordion-button.collapsed {
-    border-bottom-right-radius: 0 !important;
-    border-bottom-left-radius: 0 !important;
-}
 
 
 /* inner page common classes is here  */
