@@ -21,6 +21,9 @@
 
 <body>
 
+    <div id="preloader">
+        <img src="./assets/img/loader.gif" alt="">
+    </div>
     <!-- Header section starts here  -->
     <header id="header">
         <nav class="navbar navbar-expand-lg ">
@@ -90,7 +93,8 @@
         <div class="banner-sec wave-container">
             <div class="overlay"></div>
             <div class="banner-img">
-                <img class="img-fluid" src="./assets/img/banner.png" alt="">
+                <img class="img-fluid mobile-none" src="./assets/img/banner.png" alt="">
+                <img class="img-fluid desktop-none" src="./assets/img/banner-mobile.png" alt="">
             </div>
             <div class="banner-content text-center">
                 <p class="">Co Working | Co Payling | Co Learning</p>
@@ -148,7 +152,7 @@
     <section>
         <div class="container py-5">
             <div class="row">
-                <div class="col-md-6 col-sm-12">
+                <div class="col-md-5 col-sm-12">
                     <div class="" style="text-align: justify;">
                         <h2 class="purplr-text"><span>Disrupting</span> 9 to 5</h2>
                         <p>The pandemic has served as a reminder that we often get caught up in the daily hustle of
@@ -170,15 +174,19 @@
                         </p>
                     </div>
                 </div>
-                <div class="col-md-6 col-sm-12" style="overflow: hidden;">
-
+                <div class="col-md-7 col-sm-12 main-circle-div">
                     <div class="circle-div">
 
-                        <img id="slice1img" class="img-fluid sliceimg" src="./assets/img/about-sec1.png" alt=""
-                            style="max-width: 200px;">
-                        <img id="slice2img" class="img-fluid sliceimg" src="./assets/img/about-sec2.png" alt="">
-                        <img id="slice3img" class="img-fluid sliceimg" src="./assets/img/about-se3.png" alt="">
-
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal"><img id="slice1img"
+                                class="img-fluid sliceimg" src="./assets/img/about-sec1.png" alt=""
+                                style="max-width: 200px;">
+                        </a>
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <img id="slice2img" class="img-fluid sliceimg" src="./assets/img/about-sec2.png" alt="">
+                        </a>
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <img id="slice3img" class="img-fluid sliceimg" src="./assets/img/about-se3.png" alt="">
+                        </a>
 
                         <div class="circle" id="parent">
                             <div class="slice" id="slice1">
@@ -190,8 +198,24 @@
                                 <!-- <img class="img-fluid" src="./assets/img/about-sec3.png" alt=""> -->
                             </div>
                         </div>
+
+
                     </div>
 
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+
+                                <div class="modal-body p-0  anim-modal-image">
+                                    <img class="img-fluid" src="./assets/img/studio-mobile.png" alt="">
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -245,7 +269,7 @@
             <h2 class="text-info">Words of our <span>Community</span></h2>
             <div class="review-sec d-flex align-items-start py-5">
 
-                <div class="text-center">
+                <div class="user-reviews">
                     <div class="scrollable-container">
                         <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist"
                             aria-orientation="vertical">
@@ -399,9 +423,12 @@
                     <div class="mobile-center mb-5">
                         <img class="img-fluid" src="./assets/img/lgo.png" alt="">
                         <div class="social-icons mobile-none">
-                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#"><img class="img-fluid" src="./assets/img/insta.png" alt="blob"></a>
+                            <a href="#"><img class="img-fluid" src="./assets/img/linkedin.png" alt="blob"></a>
+                            <a href="#"><img class="img-fluid" src="./assets/img/fb.png" alt="blob"></a>
+                            <!-- <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
                             <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                            <a href="#"> <i class="fa-brands fa-linkedin"></i></a>
+                            <a href="#"> <i class="fa-brands fa-linkedin"></i></a> -->
                         </div>
                     </div>
 
@@ -460,9 +487,9 @@
                         </small>
 
                         <small class="mt-mobile desktop-none">
-                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                            <a href="#"> <i class="fa-brands fa-linkedin"></i></a>
+                            <a href="#"><img class="img-fluid" src="./assets/img/insta.png" alt="blob"></a>
+                            <a href="#"><img class="img-fluid" src="./assets/img/linkedin.png" alt="blob"></a>
+                            <a href="#"><img class="img-fluid" src="./assets/img/fb.png" alt="blob"></a>
                         </small>
                     </div>
 

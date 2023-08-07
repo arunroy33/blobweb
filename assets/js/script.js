@@ -30,7 +30,7 @@ function setHeaderColor() {
   const pageTitle = document.title;
   const navlinks = document.querySelectorAll(".navbar-nav li a");
   const active = document.querySelector(".active");
-  console.log(active);
+  // console.log(active);
 
   // Replace 'Home' with the title of your home page
   const isHomePage = pageTitle === "Home";
@@ -57,6 +57,8 @@ function setHeaderColor() {
 window.onload = setHeaderColor;
 
 $(document).ready(function () {
+  $("#preloader").fadeOut("slow");
+
   // homepage mobile nav toggle
 
   // gallery slider is here
@@ -151,6 +153,7 @@ $(document).ready(function () {
     dots: false,
     autoplay: false,
     infinite: true,
+    arrows: false,
     speed: 200,
     slidesToShow: 4,
     slidesToScroll: 1,

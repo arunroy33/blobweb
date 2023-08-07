@@ -12,6 +12,19 @@
          height: 109vh;
      }
 
+     .main-circle-div {
+         overflow: visible !important;
+     }
+
+     .user-reviews {
+         display: flex;
+         align-items: center;
+     }
+
+     .comu-icon {
+         transform: rotate(-90deg);
+     }
+
      .contact-page-sec {
          padding: 20px 15px 50px 15px;
      }
@@ -58,6 +71,23 @@
          display: block !important;
      }
 
+     .coworking-servic-box {
+         width: 100% !important;
+     }
+
+     .cwbanner-img {
+         text-align: center;
+     }
+
+     .cwbanner-img img {
+         width: 92%;
+     }
+
+     .circle-div {
+         height: 250px !important;
+         width: 300px !important;
+     }
+
      .circle {
          height: 250px !important;
          width: 250px !important;
@@ -77,7 +107,7 @@
      }
 
      #slice3img {
-         right: 2px !important;
+         right: -8px !important;
          top: 92px !important;
      }
 
@@ -87,9 +117,7 @@
          width: 335px;
      }
 
-     .comu-icon {
-         display: none;
-     }
+
 
      .mt-mobile {
          margin-top: 20px;
@@ -104,7 +132,7 @@
  @media (max-width: 767.98px) {
 
      h1 {
-         font-size: 40px !important;
+         font-size: 32px !important;
          line-height: 70px;
      }
 
@@ -216,6 +244,11 @@
      }
 
      /* animation style in here  */
+     .circle-div {
+         height: 438px;
+         width: 359px;
+     }
+
      .circle {
          height: 300px;
          width: 300px;
@@ -230,6 +263,19 @@
          height: 90px;
      }
 
+     .gallery-slide img {
+         height: 350px;
+     }
+
+
+ }
+
+ @media (min-width: 1000px) {
+
+     .anim-modal-image {
+         left: 42% !important;
+     }
+
  }
 
  /* // Large devices (desktops, less than 1200px) */
@@ -237,6 +283,8 @@
      .coworking-servic-box {
          width: 90%;
      }
+
+
  }
 
  /* // X-Large devices (large desktops, less than 1400px) */
